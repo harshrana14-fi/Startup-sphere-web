@@ -137,19 +137,17 @@ const TeamPage: React.FC = () => {
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
+            className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tight mb-6 italic leading-[1.1]"
           >
-            <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tight mb-6 italic leading-[1.1]">
             THE <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/30 whitespace-nowrap">ARCHITECTS</span>
-          </h1>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
+            className="text-gray-400 text-base sm:text-lg md:text-xl max-w-2xl mx-auto font-light tracking-wide px-4"
           >
-            <p className="text-gray-400 text-base sm:text-lg md:text-xl max-w-2xl mx-auto font-light tracking-wide px-4">
             A collective of visionaries, mentors, and builders driving the startup culture at Startup Sphere.
-          </p>
           </motion.p>
         </div>
 
@@ -191,7 +189,7 @@ const TeamPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {subDepartments.map((dept, index) => (
               <motion.div
                 key={dept.title}
@@ -199,23 +197,34 @@ const TeamPage: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
+                whileHover={{ y: -10 }}
+                className="h-full"
               >
-                <div className="group relative rounded-3xl border border-white/5 bg-gradient-to-br from-white/[0.03] to-transparent p-8 hover:border-purple-500/30 transition-all duration-500">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="p-3 rounded-2xl bg-purple-500/10 border border-purple-500/20 text-purple-400 group-hover:bg-purple-500/20 transition-colors">
-                    {dept.icon}
+                <div className="group relative rounded-3xl border border-white/10 bg-gradient-to-br from-white/[0.02] to-transparent p-8 hover:border-purple-500/40 transition-all duration-500 hover:shadow-[0_0_30px_rgba(168,85,247,0.15)] h-full flex flex-col">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="p-4 rounded-2xl bg-gradient-to-br from-purple-500/20 to-cyan-500/20 border border-purple-500/30 text-purple-400 group-hover:from-purple-500/30 group-hover:to-cyan-500/30 transition-all duration-300 group-hover:scale-110">
+                      {dept.icon}
+                    </div>
+                    <h3 className="text-2xl font-black tracking-tight uppercase italic text-white group-hover:text-purple-300 transition-colors duration-300">
+                      {dept.title}
+                    </h3>
                   </div>
-                  <h3 className="text-2xl font-bold tracking-tight uppercase italic text-white">
-                    {dept.title}
-                  </h3>
+                  <p className="text-gray-300 leading-relaxed font-light flex-grow mb-8">
+                    {dept.description}
+                  </p>
+                  <div className="flex items-center justify-between mt-auto">
+                    <div className="flex items-center gap-2 text-purple-400 text-sm font-medium">
+                      <span className="w-2 h-2 rounded-full bg-purple-500 animate-pulse"></span>
+                      <span>Learn More</span>
+                    </div>
+                    <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-2">
+                      <div className="w-4 h-4 border-t-2 border-r-2 border-purple-500 rounded-tr-lg"></div>
+                    </div>
+                  </div>
+                  
+                  {/* Hover glow effect */}
+                  <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-purple-500/5 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-xl"></div>
                 </div>
-                <p className="text-gray-400 leading-relaxed font-light">
-                  {dept.description}
-                </p>
-                <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <div className="w-3 h-3 border-t border-r border-purple-500" />
-                </div>
-              </div>
               </motion.div>
             ))}
           </div>

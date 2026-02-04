@@ -8,9 +8,15 @@ import type { Points as PointsType } from "three";
 
 export const StarBackground = (props: ThreeElements["points"]) => {
   const ref = useRef<PointsType | null>(null);
-  const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(5000), { radius: 1.2 })
-  );
+  
+  // Simple fallback star generation to avoid NaN issues
+  const positions = new Float32Array(5000 * 3);
+  for (let i = 0; i < 5000; i++) {
+    const i3 = i * 3;
+    positions[i3] = (Math.random() - 0.5) * 2.4; // x
+    positions[i3 + 1] = (Math.random() - 0.5) * 2.4; // y
+    positions[i3 + 2] = (Math.random() - 0.5) * 2.4; // z
+  }
 
   useFrame((_state, delta) => {
     if (ref.current) {
@@ -25,8 +31,8 @@ export const StarBackground = (props: ThreeElements["points"]) => {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any -- drei Points ref type mismatch with @types/three
         ref={ref as any}
         stride={3}
-        positions={new Float32Array(sphere)}
-        frustumCulled
+        positions={positions}
+        frustumCulled={false}
         {...props}
       >
         <PointMaterial

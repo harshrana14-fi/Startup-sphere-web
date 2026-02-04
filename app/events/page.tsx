@@ -54,7 +54,7 @@ const EventsPage: React.FC = () => {
     {
       id: 1,
       title: "Fish Tank 2.0",
-      description: "Our flagship pitching competition – where creativity meets courage, mentorship meets guidance, and ideas meet opportunity. Participants didn't just pitch ideas; they brought solutions, passion, and vision to the table.",
+      description: "Our flagship pitching competition – where creativity meets courage, mentorship meets guidance, and ideas meet opportunity. Participants didn't just pitch ideas; they brought passion, and vision to the table.",
       details: "Distinguished jury and mentors provided invaluable insights. Growth happens when ideas are challenged.",
       image: "/jiya.jpg",
       date: "March 15, 2024",
@@ -79,7 +79,7 @@ const EventsPage: React.FC = () => {
       id: 3,
       title: "Venture Lab & Campus Ventures",
       description:
-        "From campus idea to platform – we support student-led initiatives like CampusMart that are shaping the future through creativity and courage.",
+        "From campus idea to platform – we support student-led initiatives like CampusMart that are shaping the future through creativity.",
       details:
         "Our ecosystem provides the resources and network to help you build it from the ground up.",
       image: "/blue.jpg",
@@ -110,10 +110,10 @@ const EventsPage: React.FC = () => {
       id: 113,
       title: "Fresh Talent Hiring: Recruitment Drive",
       date: "19-Sept-2025",
-      type: "Upcoming",
+      type: "Past",
       description: "Connecting our startups with the brightest fresh minds from the campus.",
       details: "Direct hiring drive for internships and entry-level startup roles.",
-      image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&h=600&fit=crop",
+      image: "/recruitment.jpg",
       location: "Campus Plaza",
       category: "Recruitment",
       accent: "from-indigo-500 to-purple-600",
@@ -124,10 +124,10 @@ const EventsPage: React.FC = () => {
       id: 112,
       title: "Virtual Orientation",
       date: "18-Sept-2025",
-      type: "Upcoming",
+      type: "Past",
       description: "Online session for remote members to understand the global sphere network.",
       details: "Unveiling the new digital dashboard and collaborative tools.",
-      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=600&fit=crop",
+      image: "/orientation.jpg",
       location: "Discord / Zoom",
       category: "Orientation",
       accent: "from-cyan-400 to-blue-500",
@@ -138,10 +138,10 @@ const EventsPage: React.FC = () => {
       id: 111,
       title: "Fish Tank 2.0: Pitch Your Idea Challenge",
       date: "19-Aug-2025",
-      type: "Upcoming",
+      type: "Past",
       description: "The next iteration of our premier startup competition. Submit your prototypes now.",
       details: "Phase 1: Idea vetting. Phase 2: Mentor matching. Final: Live Pitch.",
-      image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=600&fit=crop",
+      image: "/fish-tank.jpg",
       location: "Innovation Hub",
       category: "Competition",
       accent: "from-purple-600 to-blue-600",
@@ -152,10 +152,10 @@ const EventsPage: React.FC = () => {
       id: 110,
       title: "CAT & GATE Guidance Session",
       date: "21-Aug-2025",
-      type: "Upcoming",
+      type: "Past",
       description: "Strategic planning and guidance for students aiming for higher education via CAT/GATE.",
       details: "Toppers' roadmap and resource identification for competitive exams.",
-      image: "https://www.mikevestil.com/wp-content/uploads/2023/03/The-Ultimate-Guide-To-Strategic-Planning_-Definition-And-Process.png",
+      image: "/gate-cat.jpg",
       location: "Auditorium",
       category: "Guidance",
       accent: "from-slate-500 to-gray-700",
@@ -169,7 +169,7 @@ const EventsPage: React.FC = () => {
       type: "Past",
       description: "Intensive bootcamp focused on React, Tailwind CSS, and building scalable web applications.",
       details: "Transitioning from basic HTML to modern production-ready stacks.",
-      image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop",
+      image: "/bootcamp.jpg",
       location: "Tech Lab",
       category: "Development",
       accent: "from-blue-600 to-cyan-500",
@@ -183,7 +183,7 @@ const EventsPage: React.FC = () => {
       type: "Past",
       description: "Essential financial literacy session for budding founders and student investors.",
       details: "Covering budgeting, burn rate, and basic venture capital terminology.",
-      image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=600&fit=crop",
+      image: "/finance.jpg",
       location: "Finance Wing",
       category: "Finance",
       accent: "from-green-500 to-emerald-500",
@@ -197,27 +197,12 @@ const EventsPage: React.FC = () => {
       type: "Past",
       description: "Technical workshop on composition, lighting, and product photography for startups.",
       details: "Hands-on session with DSLR and mobile photography experts.",
-      image: "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&h=600&fit=crop",
+      image: "/photography.jpg",
       location: "Visual Arts Lab",
       category: "Creative",
       accent: "from-violet-500 to-fuchsia-500",
       icon: <Camera className="w-5 h-5" />,
       attendees: 40,
-    },
-    {
-      id: 106,
-      title: "Get Your Resume Job Ready",
-      date: "21-Oct-2024",
-      type: "Past",
-      description: "A specialized workshop focused on ATS-friendly formatting and impact-driven resume writing.",
-      details: "Live resume reviews and template optimization for engineering students.",
-      image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&h=600&fit=crop",
-      location: "Design Studio",
-      category: "Placement",
-      accent: "from-orange-500 to-rose-500",
-      icon: <FileText className="w-5 h-5" />,
-      attendees: 120,
-
     },
     {
       id: 105,
@@ -226,7 +211,7 @@ const EventsPage: React.FC = () => {
       type: "Past",
       description: "Simulated interview environments with industry professionals to sharpen placement readiness.",
       details: "One-on-one feedback sessions for soft skills and technical knowledge.",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&h=600&fit=crop",
+      image: "/inter.jpg",
       location: "Career Center",
       category: "Professional",
       accent: "from-emerald-400 to-teal-600",
@@ -240,7 +225,7 @@ const EventsPage: React.FC = () => {
       type: "Past",
       description: "In-depth workshop on modern digital marketing, growth hacking, and personal branding.",
       details: "Analyzing successful case studies of 2024 marketing campaigns.",
-      image: "https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=800&h=600&fit=crop",
+      image: "/marketing.jpg",
       location: "Marketing Hub",
       category: "Workshop",
       accent: "from-pink-500 to-purple-500",
@@ -254,7 +239,7 @@ const EventsPage: React.FC = () => {
       type: "Past",
       description: "A week-long curation session to identify foundational literature for entrepreneurial success.",
       details: "Collaborative research session to build the Sphere Library.",
-      image: "https://images.unsplash.com/photo-1491841573634-28140fc7ced7?w=800&h=600&fit=crop",
+      image: "/books.jpg",
       location: "Sphere Library",
       category: "Knowledge",
       accent: "from-amber-400 to-yellow-600",
@@ -268,7 +253,7 @@ const EventsPage: React.FC = () => {
       type: "Past",
       description: "Welcoming the new cohort of innovators to the Startup Sphere ecosystem.",
       details: "Introduction to our mission, vision, and the resources available to students.",
-      image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=600&fit=crop",
+      image: "/orientation.jpg",
       location: "Main Seminar Hall",
       category: "Orientation",
       accent: "from-blue-500 to-indigo-500",
@@ -282,13 +267,21 @@ const EventsPage: React.FC = () => {
       type: "Past",
       description: "A creative competition focusing on short-form video storytelling and cinematic editing techniques.",
       details: "Members competed to create the most engaging viral-ready reels for startups.",
-      image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=600&fit=crop",
+      image: "/video-reel.jpg",
       location: "Media Lab",
       category: "Creative",
       accent: "from-red-500 to-orange-500",
       icon: <Video className="w-5 h-5" />,
       attendees: 45,
     },
+  ];
+
+  const sponsors = [
+    { name: "Red Bull", logo: "/redbull.jpg", gradient: "from-red-500 to-blue-500" },
+    { name: "Red Tape", logo: "/red.png", gradient: "from-red-600 to-gray-800" },
+    { name: "Unstop", logo: "/un.png", gradient: "from-blue-500 to-cyan-400" },
+    { name: "PW", logo: "/PW.jpg", gradient: "from-orange-500 to-pink-500" },
+    { name: "FPV", logo: "/in.png", gradient: "from-red-500 to-gray-700" },
   ];
 
   return (
@@ -339,7 +332,7 @@ const EventsPage: React.FC = () => {
         {/* Featured Section */}
         <div className="mb-32">
           <div className="flex items-center gap-4 mb-12">
-            <span className="text-xs font-black tracking-[0.4em] text-purple-500 uppercase italic">/ Featured Highlights</span>
+            <span className="text-xs font-black tracking-[0.4em] text-purple-500 uppercase italic">/ From Ideation to Execution</span>
             <div className="h-px flex-1 bg-gradient-to-r from-purple-500/30 to-transparent" />
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -349,17 +342,90 @@ const EventsPage: React.FC = () => {
           </div>
         </div>
 
+
         {/* Full Calendar / Workshops Section */}
         <div>
           <div className="flex items-center gap-4 mb-12">
-            <span className="text-xs font-black tracking-[0.4em] text-cyan-500 uppercase italic">/ Full Calendar & Workshops</span>
+            <span className="text-xs font-black tracking-[0.4em] text-cyan-500 uppercase italic">/ Other Events & Activities</span>
             <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/30 to-transparent" />
           </div>
           <div className="space-y-6">
-            {calendarEvents.map((event, index) => (
+            {calendarEvents.filter(event => event.category !== 'Competition' && event.category !== 'Incubation').map((event, index) => (
               <ListEventCard key={event.id} event={event} index={index} />
             ))}
           </div>
+        </div>
+
+        {/* Sponsors Section - IMPROVED */}
+        <div className="mt-32 mb-24">
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-md mb-6">
+              <Sparkles className="w-4 h-4 text-purple-400" />
+              <span className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-300">
+                POWERED BY
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-6xl font-black tracking-tighter mb-6 italic">
+              OUR <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">PARTNERS</span>
+            </h2>
+            <p className="text-lg text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">
+              Trusted by industry leaders who believe in empowering the next generation of innovators
+            </p>
+          </div>
+
+          {/* Sponsors Grid - Single Row */}
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 via-transparent to-cyan-500/5 blur-3xl" />
+            <div className="relative flex flex-wrap justify-center items-center gap-8 md:gap-12 px-4">
+              {sponsors.map((sponsor, index) => (
+                <motion.div
+                  key={sponsor.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  whileHover={{ scale: 1.05, y: -5 }}
+                  className="group relative"
+                >
+                  <div className="relative w-32 h-32 md:w-40 md:h-40 flex items-center justify-center p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm transition-all duration-500 group-hover:border-white/30 group-hover:bg-white/10 group-hover:shadow-2xl group-hover:shadow-purple-500/20">
+                    {/* Gradient Glow on Hover */}
+                    <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${sponsor.gradient} opacity-0 group-hover:opacity-10 blur-xl transition-opacity duration-500`} />
+                    
+                    {/* Logo */}
+                    <img 
+                      src={sponsor.logo} 
+                      alt={sponsor.name}
+                      className="relative z-10 w-full h-full object-contain filter brightness-90 group-hover:brightness-110 transition-all duration-500"
+                    />
+                    
+                    {/* Shine Effect */}
+                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  </div>
+                  
+                  {/* Name Label */}
+                  <div className="mt-4 text-center">
+                    <p className="text-xs font-bold text-gray-400 group-hover:text-white transition-colors duration-300 uppercase tracking-wider">
+                      {sponsor.name}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          {/* Partnership CTA */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mt-16"
+          >
+            <p className="text-sm text-gray-500 mb-6 uppercase tracking-widest">Interested in partnering?</p>
+            <a href="/contact" className="group px-6 py-3 bg-purple-600 rounded-lg font-bold text-xs uppercase tracking-wider hover:bg-purple-700 transition-all duration-300 relative overflow-hidden inline-block">
+              <span className="relative z-10">Become a Sponsor</span>
+              <div className="absolute inset-0 bg-purple-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </a>
+          </motion.div>
         </div>
       </main>
     </div>
@@ -423,12 +489,9 @@ const FeaturedEventCard = ({ event, index }: { event: EventItem; index: number }
       </div>
 
       <div className="flex items-center gap-4 pt-4">
-        <button className="inline-flex items-center gap-2 px-6 py-3 bg-white text-black rounded-xl font-black text-[10px] uppercase tracking-widest hover:bg-purple-500 hover:text-white transition-all duration-300">
+        <a href="/gallery" className="inline-flex items-center gap-2 px-6 py-3 bg-white text-black rounded-xl font-black text-[10px] uppercase tracking-widest hover:bg-purple-500 hover:text-white transition-all duration-300">
           <ImageIcon className="w-3 h-3" /> View Gallery
-        </button>
-        <button className="px-6 py-3 border border-white/10 rounded-xl font-bold text-[10px] hover:bg-white/5 transition-all text-white uppercase tracking-widest">
-          CASE STUDY
-        </button>
+        </a>
       </div>
     </div>
     </div>
@@ -482,18 +545,9 @@ const ListEventCard = ({ event, index }: { event: EventItem; index: number }) =>
       </p>
 
       <div className="flex items-center gap-6 mt-auto">
-        <motion.button 
-          whileTap={{ scale: 0.95 }}
-        >
-          <div className={`px-8 py-3 rounded-xl font-black text-[10px] uppercase tracking-widest transition-all duration-500 flex items-center gap-2 ${
-            event.type === 'Upcoming' 
-            ? 'bg-gradient-to-r from-purple-600 to-indigo-600 text-white hover:shadow-[0_0_20px_rgba(147,51,234,0.4)]' 
-            : 'bg-white/10 text-white hover:bg-white/20'
-          }`}>
-          {event.type === 'Upcoming' ? 'Register Now' : 'View Recap'}
-          <ChevronRight className="w-3 h-3" />
-        </div>
-        </motion.button>
+        <a href="/gallery" className="inline-flex items-center gap-2 px-6 py-3 bg-white text-black rounded-xl font-black text-[10px] uppercase tracking-widest hover:bg-purple-500 hover:text-white transition-all duration-300">
+          <ImageIcon className="w-3 h-3" /> Gallery
+        </a>
         
         <div className="hidden sm:flex items-center gap-2 text-[10px] font-bold text-gray-500 uppercase tracking-widest">
           <MapPin className="w-3 h-3" />
