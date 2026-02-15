@@ -17,11 +17,6 @@ export const SOCIALS = [
     icon: RxInstagramLogo,
     link: "https://www.instagram.com/startup_sphere/",
   },
-  {
-    name: "Twitter",
-    icon: RxTwitterLogo,
-    link: "https://twitter.com",
-  },
 ] as const;
 
 export const FOOTER_DATA = [

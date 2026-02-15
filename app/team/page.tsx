@@ -50,7 +50,7 @@ const TeamPage: React.FC = () => {
       name: "Jiya Chugh",
       role: "President",
       bio: "Leading Startup Sphere with vision and innovation, bridging the gap between student potential and market reality.",
-      image: "https://media.licdn.com/dms/image/v2/D5603AQHpQG9NxWBCWA/profile-displayphoto-shrink_800_800/B56ZPuknIoGsAg-/0/1734874395982?e=1771459200&v=beta&t=3NjZzYbAImtgxg2lJ0AkpBOHztD5w1Ew6_oyDkOIsGg",
+      image: "/jiya1.jpeg",
       linkedin: "https://www.linkedin.com/in/jiyachugh/",
       instagram: "#",
       accent: "from-purple-500 to-indigo-500"
@@ -73,7 +73,7 @@ const TeamPage: React.FC = () => {
       name: "Kartik",
       role: "Head, Venture Lab",
       bio: "Entrepreneur and mentor guiding student startups from ideation to prototype.",
-      image: "https://media.licdn.com/dms/image/v2/D5603AQHPvF9dTmUZfA/profile-displayphoto-crop_800_800/B56ZhBV8dSHUAI-/0/1753442929996?e=1771459200&v=beta&t=_fmoM7VeZUe32NXFkjvXOCwE1qhLexWseFUIPwyo7hI",
+      image: "/kartik1.jpeg",
       linkedin: "https://www.linkedin.com/in/kartik-singh19/",
       instagram: "#",
       accent: "from-orange-500 to-red-500"
@@ -87,6 +87,56 @@ const TeamPage: React.FC = () => {
       linkedin: "https://www.linkedin.com/in/shubham-solanki-902331321/",
       instagram: "https://www.instagram.com/the._.solanki_17/",
       accent: "from-emerald-500 to-teal-500"
+    },
+    {
+      id: 4,
+      name: "Kushagra Deewan",
+      role: "Head, Outreach and Collaboration",
+      bio: "Managing external partnerships, corporate relations, and expansion of the ecosystem.",
+      image: "/kushagra.jpeg",
+      linkedin: "#",
+      instagram: "#",
+      accent: "from-blue-600 to-indigo-600"
+    },
+    {
+      id: 5,
+      name: "Prashasti",
+      role: "Head, Outreach and Collaboration",
+      bio: "Facilitating networking opportunities and securing strategic alliances for the community.",
+      image: "/Prashasti.jpeg",
+      linkedin: "https://www.linkedin.com/in/prashasti-937504257/",
+      instagram: "#",
+      accent: "from-pink-600 to-rose-600"
+    },
+    {
+      id: 6,
+      name: "Riya",
+      role: "Head, Design & Media",
+      bio: "Leading the creative front, overseeing branding, UI/UX, and social media storytelling.",
+      image: "/riya.jpeg",
+      linkedin: "#",
+      instagram: "#",
+      accent: "from-amber-500 to-yellow-500"
+    },
+    {
+      id: 7,
+      name: "Sahil Rao",
+      role: "Head, Event and Operation",
+      bio: "Orchestrating event logistics and ensuring smooth execution of society operations.",
+      image: "/Sahil.jpeg",
+      linkedin: "https://www.linkedin.com/in/sahil-rao-188b01293/",
+      instagram: "#",
+      accent: "from-cyan-600 to-blue-600"
+    },
+    {
+      id: 8,
+      name: "Sufiyan Ahmed",
+      role: "Head, Event",
+      bio: "Conceptualizing and managing hackathons, pitch nights, and networking workshops.",
+      image: "/Sufiyan.jpeg",
+      linkedin: "#",
+      instagram: "#",
+      accent: "from-slate-500 to-slate-700"
     }
   ];
 

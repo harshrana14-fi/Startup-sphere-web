@@ -117,7 +117,7 @@ const ContactPage: React.FC = () => {
                     <Phone className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="text-white font-bold text-lg mb-1">Call Center</h4>
+                    <h4 className="text-white font-bold text-lg mb-1">Call us on</h4>
                     <p className="text-gray-400 text-sm font-medium">+91 82877 84380</p>
                   </div>
                 </div>
