@@ -20,13 +20,19 @@ interface TeamGroup {
   icon: ReactNode;
 }
 
+interface CoreTeamSection {
+  title: string;
+  members: TeamMember[];
+  icon: ReactNode;
+}
+
 const TeamPage: React.FC = () => {
   const facultyTeam: TeamMember[] = [
     {
       id: 1,
       name: "Dr. Bhoomi Gupta",
       role: "HOD, ITE",
-      bio: "Department Head of Information Technology Engineering with a focus on academic excellence.",
+      bio: "",
       image: "https://media.licdn.com/dms/image/v2/C4D03AQHCVfTXnJzUmA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1643182954113?e=1771459200&v=beta&t=FJrmAIHgMVFxUUsRnHK-xfBABnYLkYSqBWh5gNHGHGg",
       linkedin: "https://www.linkedin.com/in/dr-bhoomi-gupta-3278a734/",
       instagram: "#",
@@ -36,7 +42,7 @@ const TeamPage: React.FC = () => {
       id: 2,
       name: "Ms. Sapna Gupta",
       role: "Faculty Coordinator",
-      bio: "Driving the administrative and mentorship bridge for Startup Sphere initiatives.",
+      bio: "",
       image: "https://media.licdn.com/dms/image/v2/D5603AQE49jaTKP6N7Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1695826184887?e=1771459200&v=beta&t=Sp7cp4Ii7dyYf2szTBwPgeNwgYFrsrS09-73kHvsYqE",
       linkedin: "https://www.linkedin.com/in/sapna-gupta-7ba94a219/",
       instagram: "#",
@@ -47,9 +53,19 @@ const TeamPage: React.FC = () => {
   const leadershipTeam: TeamMember[] = [
     {
       id: 1,
+      name: "Shubham Raj",
+      role: "Founder",
+      bio: "",
+      image: "bhaiya.png",
+      linkedin: "https://www.linkedin.com/in/shubham-raj-62755628b/",
+      instagram: "#",
+      accent: "from-violet-600 to-purple-600"
+    },
+    {
+      id: 2,
       name: "Jiya Chugh",
       role: "President",
-      bio: "Leading Startup Sphere with vision and innovation, bridging the gap between student potential and market reality.",
+      bio: "",
       image: "/jiya1.jpeg",
       linkedin: "https://www.linkedin.com/in/jiyachugh/",
       instagram: "#",
@@ -57,86 +73,100 @@ const TeamPage: React.FC = () => {
     }
   ];
 
-  const coreTeam: TeamMember[] = [
+  const coreTeamSections: CoreTeamSection[] = [
     {
-      id: 1,
-      name: "Shubham Raj",
-      role: "Founder",
-      bio: "Driving innovation and entrepreneurship. Building the foundation of the startup ecosystem.",
-      image: "https://media.licdn.com/dms/image/v2/D5603AQGMM-OnvswwDA/profile-displayphoto-crop_800_800/B56ZpSntCWI4AI-/0/1762322731998?e=1771459200&v=beta&t=o69Tanm_c6KpLH2bestXd9Q29kFoD-ad1De48JI39oA",
-      linkedin: "https://www.linkedin.com/in/shubham-raj-62755628b/",
-      instagram: "#",
-      accent: "from-violet-600 to-purple-600"
+      title: "Venture Lab",
+      members: [
+        {
+          id: 1,
+          name: "Kartik",
+          role: "Head, Venture Lab",
+          bio: "",
+          image: "/kartik1.jpeg",
+          linkedin: "https://www.linkedin.com/in/kartik-singh19/",
+          instagram: "#",
+          accent: "from-orange-500 to-red-500"
+        },
+        {
+          id: 2,
+          name: "Shubham Solanki",
+          role: "Co-Head, Venture Lab",
+          bio: "",
+          image: "https://media.licdn.com/dms/image/v2/D4D03AQGG51UkVP8aew/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1732520079133?e=1771459200&v=beta&t=a8n5UUpFJ1P-MaMLM3KK_io3mQMdI3irXpEygNPHq10",
+          linkedin: "https://www.linkedin.com/in/shubham-solanki-902331321/",
+          instagram: "https://www.instagram.com/the._.solanki_17/",
+          accent: "from-emerald-500 to-teal-500"
+        }
+      ],
+      icon: <Cpu className="w-5 h-5" />
     },
     {
-      id: 2,
-      name: "Kartik",
-      role: "Head, Venture Lab",
-      bio: "Entrepreneur and mentor guiding student startups from ideation to prototype.",
-      image: "/kartik1.jpeg",
-      linkedin: "https://www.linkedin.com/in/kartik-singh19/",
-      instagram: "#",
-      accent: "from-orange-500 to-red-500"
+      title: "Outreach and Collaboration",
+      members: [
+        {
+          id: 3,
+          name: "Kushagra Deewan",
+          role: "Head, Outreach and Collaboration",
+          bio: "",
+          image: "/kushagra.jpeg",
+          linkedin: "#",
+          instagram: "#",
+          accent: "from-blue-600 to-indigo-600"
+        },
+        {
+          id: 4,
+          name: "Prashasti",
+          role: "Head, Outreach and Collaboration",
+          bio: "",
+          image: "/Prashasti.jpeg",
+          linkedin: "https://www.linkedin.com/in/prashasti-937504257/",
+          instagram: "#",
+          accent: "from-pink-600 to-rose-600"
+        }
+      ],
+      icon: <Globe className="w-5 h-5" />
     },
     {
-      id: 3,
-      name: "Shubham Solanki",
-      role: "Co-Head, Venture Lab",
-      bio: "Judge and mentor for various competitions, specializing in business model validation.",
-      image: "https://media.licdn.com/dms/image/v2/D4D03AQGG51UkVP8aew/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1732520079133?e=1771459200&v=beta&t=a8n5UUpFJ1P-MaMLM3KK_io3mQMdI3irXpEygNPHq10",
-      linkedin: "https://www.linkedin.com/in/shubham-solanki-902331321/",
-      instagram: "https://www.instagram.com/the._.solanki_17/",
-      accent: "from-emerald-500 to-teal-500"
+      title: "Design and Media",
+      members: [
+        {
+          id: 5,
+          name: "Riya",
+          role: "Head, Design & Media",
+          bio: "",
+          image: "/riya.jpeg",
+          linkedin: "#",
+          instagram: "#",
+          accent: "from-amber-500 to-yellow-500"
+        }
+      ],
+      icon: <Globe className="w-5 h-5" />
     },
     {
-      id: 4,
-      name: "Kushagra Deewan",
-      role: "Head, Outreach and Collaboration",
-      bio: "Managing external partnerships, corporate relations, and expansion of the ecosystem.",
-      image: "/kushagra.jpeg",
-      linkedin: "#",
-      instagram: "#",
-      accent: "from-blue-600 to-indigo-600"
-    },
-    {
-      id: 5,
-      name: "Prashasti",
-      role: "Head, Outreach and Collaboration",
-      bio: "Facilitating networking opportunities and securing strategic alliances for the community.",
-      image: "/Prashasti.jpeg",
-      linkedin: "https://www.linkedin.com/in/prashasti-937504257/",
-      instagram: "#",
-      accent: "from-pink-600 to-rose-600"
-    },
-    {
-      id: 6,
-      name: "Riya",
-      role: "Head, Design & Media",
-      bio: "Leading the creative front, overseeing branding, UI/UX, and social media storytelling.",
-      image: "/riya.jpeg",
-      linkedin: "#",
-      instagram: "#",
-      accent: "from-amber-500 to-yellow-500"
-    },
-    {
-      id: 7,
-      name: "Sahil Rao",
-      role: "Head, Event and Operation",
-      bio: "Orchestrating event logistics and ensuring smooth execution of society operations.",
-      image: "/Sahil.jpeg",
-      linkedin: "https://www.linkedin.com/in/sahil-rao-188b01293/",
-      instagram: "#",
-      accent: "from-cyan-600 to-blue-600"
-    },
-    {
-      id: 8,
-      name: "Sufiyan Ahmed",
-      role: "Head, Event",
-      bio: "Conceptualizing and managing hackathons, pitch nights, and networking workshops.",
-      image: "/Sufiyan.jpeg",
-      linkedin: "#",
-      instagram: "#",
-      accent: "from-slate-500 to-slate-700"
+      title: "Event and Operation",
+      members: [
+        {
+          id: 6,
+          name: "Sahil Rao",
+          role: "Head, Event and Operation",
+          bio: "",
+          image: "/Sahil.jpeg",
+          linkedin: "https://www.linkedin.com/in/sahil-rao-188b01293/",
+          instagram: "#",
+          accent: "from-cyan-600 to-blue-600"
+        },
+        {
+          id: 7,
+          name: "Sufiyan Ahmed",
+          role: "Head, Event",
+          bio: "",
+          image: "/Sufiyan.jpeg",
+          linkedin: "#",
+          instagram: "#",
+          accent: "from-slate-500 to-slate-700"
+        }
+      ],
+      icon: <Cpu className="w-5 h-5" />
     }
   ];
 
@@ -170,8 +200,7 @@ const TeamPage: React.FC = () => {
 
   const teamGroups: TeamGroup[] = [
     { title: "Faculty Mentors", members: facultyTeam, icon: <Cpu className="w-6 h-6" /> },
-    { title: "Leadership", members: leadershipTeam, icon: <ShieldCheck className="w-6 h-6" /> },
-    { title: "The Core", members: coreTeam, icon: <Globe className="w-6 h-6" /> }
+    { title: "Leadership", members: leadershipTeam, icon: <ShieldCheck className="w-6 h-6" /> }
   ];
 
   return (
@@ -220,6 +249,39 @@ const TeamPage: React.FC = () => {
               </div>
             </section>
           ))}
+
+          {/* The Core Team Section with Subsections */}
+          <section className="relative">
+            <div className="flex items-center gap-4 mb-16">
+              <div className="p-3 rounded-2xl bg-white/5 border border-white/10 text-purple-400">
+                <Globe className="w-6 h-6" />
+              </div>
+              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight uppercase italic">The Core</h2>
+              <div className="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent ml-4" />
+            </div>
+
+            <div className="space-y-20">
+              {coreTeamSections.map((section, sIdx) => (
+                <div key={sIdx} className="relative">
+                  <div className="flex items-center gap-3 mb-8">
+                    <div className="p-2 rounded-xl bg-white/5 border border-white/10 text-purple-400">
+                      {section.icon}
+                    </div>
+                    <h3 className="text-xl sm:text-2xl font-bold tracking-tight uppercase italic text-purple-300">
+                      {section.title}
+                    </h3>
+                    <div className="flex-1 h-px bg-gradient-to-r from-white/5 to-transparent ml-4" />
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                    {section.members.map((member, mIdx) => (
+                      <TeamCard key={member.id} member={member} index={mIdx} />
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
         </div>
 
         {/* Sub-Departments Section */}
@@ -309,28 +371,25 @@ const TeamCard: React.FC<TeamCardProps> = ({ member, index }) => {
         onMouseLeave={() => setIsActive(false)}
         onClick={handleToggle}
       >
-      <div className={`relative aspect-[3/4] overflow-hidden rounded-[2.5rem] border transition-all duration-500 
-        ${isActive ? 'border-white/40 shadow-[0_0_50px_rgba(168,85,247,0.2)]' : 'border-white/10 bg-[#0a0a0a]'}`}>
+      <div className={`relative aspect-[4/5] max-w-xs mx-auto overflow-hidden rounded-[2.5rem] border transition-all duration-500 
+        ${isActive ? 'border-white/40 shadow-[0_0_50px_rgba(168,85,247,0.2)]' : 'border-white/10'}`}>
         
         {/* Profile Image */}
         <img
           src={member.image}
           alt={member.name}
           className={`w-full h-full object-cover transition-transform duration-700 
-            ${isActive ? 'scale-110 grayscale-0' : 'scale-100 grayscale opacity-80'}`}
+            ${isActive ? 'scale-110' : 'scale-100'}`}
         />
-        
-        {/* Gradient Overlays */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
 
         {/* Text Content */}
-        <div className="absolute inset-x-0 bottom-0 p-10 z-20">
+        <div className="absolute inset-x-0 bottom-0 px-10 pt-10 pb-4 z-20 bg-gradient-to-t from-black/90 via-black/70 to-transparent">
           <div className="space-y-1">
-            <h3 className={`text-2xl font-bold tracking-tight leading-none transition-all
+            <h3 className={`text-2xl font-bold tracking-tight leading-none transition-all drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]
               ${isActive ? 'text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400' : 'text-white'}`}>
               {member.name}
             </h3>
-            <p className="text-purple-400 text-xs font-black uppercase tracking-widest py-1">
+            <p className="text-purple-300 text-xs font-black uppercase tracking-widest py-1.5 px-3 rounded-lg bg-purple-500/20 backdrop-blur-sm border border-purple-400/30 inline-block mb-1">
               {member.role}
             </p>
           </div>
@@ -343,8 +402,8 @@ const TeamCard: React.FC<TeamCardProps> = ({ member, index }) => {
                 exit={{ opacity: 0, height: 0 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
               >
-                <div className="pt-4 overflow-hidden">
-                <p className="text-sm text-gray-300 leading-relaxed font-light mb-4">
+                <div className="pt-1 overflow-hidden">
+                <p className="text-sm text-gray-300 leading-relaxed font-light mb-3">
                   {member.bio}
                 </p>
                 <div className="flex items-center gap-4">
