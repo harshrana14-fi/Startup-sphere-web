@@ -242,7 +242,7 @@ const TeamPage: React.FC = () => {
                 <div className="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent ml-4" />
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {group.members.map((member, mIdx) => (
                   <TeamCard key={member.id} member={member} index={mIdx} />
                 ))}
@@ -273,7 +273,7 @@ const TeamPage: React.FC = () => {
                     <div className="flex-1 h-px bg-gradient-to-r from-white/5 to-transparent ml-4" />
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {section.members.map((member, mIdx) => (
                       <TeamCard key={member.id} member={member} index={mIdx} />
                     ))}
